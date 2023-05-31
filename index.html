@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="shortcut icon" href="img/paint.ico" type="image/x-icon">
+    <title>Мир красок</title>
+</head>
+<body>
+    <header>Онлайн магазин "МИР КРАСОК"</header>   
+    <img class="main_img" src="img/main_img.jpeg" alt="Краски">
+    <main>
+    <div class="description">
+        <p><strong>МИР КРАСОК</strong> - онлайн магазин <a href="https://ru.wikipedia.org/wiki/%D0%9A%D1%80%D0%B0%D1%81%D0%BA%D0%B8" target="_blank">красок</a>, 
+        <a href="https://ru.wikipedia.org/wiki/%D0%AD%D0%BC%D0%B0%D0%BB%D1%8C" target="_blank">эмалей</a> и других видов лакокрасочного покрытия широкого спектра для внутренних и внешних работ. Наша компания ведет свою историю с начала 2013 г. и за это время мы получили сильную экспертизу в области лакокрасочных и отделочных материалов. Благодаря нашему опыту и правильному подходу к закупкам товара, мы готовы предложить Вам, покупатель: лучшую цену, максимально оперативную доставку в том числе и в регионы. Каждый покупатель для нашего магазина – это всегда особый клиенты и уникальными задачами.  </p>
+    </div>
+    <div class="flex-parent">
+        <div class="flex-child left-column">
+           Мы напрямую работаем с большинством российских и зарубежных производителей, благодаря чему обеспечиваем:
+           <br>
+            <ul>            
+            <li>Прозрачное и доступное ценообразование</li>
+            <li>Наличие на складе заявленного ассортимента</li>
+            <li>Быструю отгрузку и доставку товаров клиентам</li>
+            <li>Отсутствие дополнительных наценок, сборов и комиссий</li>
+            <li>Шпатлевки</li>
+            <li>Штукатурки</li>
+            <li>Растворители</li>
+            <li>Очистители</li>            
+            </ul>
+        </div>
+        <div class="flex-child right-column">
+            <u>Наша компания поставляет:</u>
+            <ul>            
+            <li>Краски</li>
+            <li>Эмали</li>
+            <li>Лаки</li>
+            <li>Грунты</li>
+            <li>Шпатлевки</li>
+            <li>Штукатурки</li>
+            <li>Растворители</li>
+            <li>Очистители</li>            
+        </ul>
+        </div>
+    </div>
+    <div>
+        <p> <strong>Через наш сайт вы можете отправить свои контактные данные и необходимые критерии лакокрасочного покрытия и наш менеджер свяжется с Вами!</strong></p>
+        <form action="POST" >
+        <fieldset>
+            <legend>Как можем к Вам обращаться:</legend>            
+            <input type="text" placeholder="Введите Ваше имя">
+        </fieldset>
+        <fieldset>
+            <legend>Как можем с Вами связаться:</legend>
+            <input type="tel" placeholder="(XXX)-XXX-XXXX" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+        </fieldset>
+        <fieldset>
+            <legend>Что Вас интересует:</legend>            
+            <p>
+                <input type="radio" value="paint" name="subject"> Краска
+            </p>
+            <p>
+                <input type="radio" value="enamel" name="subject"> Эмаль
+            </p>
+            <p>
+                <input type="radio" value="varnish" name="subject"> Лак
+            </p>            
+        </fieldset>
+        <fieldset>
+            <legend>Какие свойства Вам необходимы:</legend>
+            <p>
+                <input type="checkbox" id="atmoshpere" name="atmoshpere">Атмосферостофкость
+            </p>
+            <p>
+                <input type="checkbox" id="moisture" name="moisture">Влагостойкость
+            </p>
+            <p>
+                <input type="checkbox" id="heat" name="heat">Термостойкость
+            </p>
+            <p>
+                <input type="checkbox" id="light" name="light">Светостойкость
+            </p>             
+        </fieldset>
+        <fieldset>
+            <legend>Выберите интересующий оттенок</legend>
+            <input type="color">
+        </fieldset>
+        <fieldset>
+            <input type="submit" value="Отправить">
+        </fieldset>
+        
+        </form>
+    </div>
+    </main>    
+    <footer>2023  ООО "Мир красок" ©</footer>
+</body>
+</html>

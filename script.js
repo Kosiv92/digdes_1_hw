@@ -17,19 +17,12 @@ async function getQuotes() {
 function addPostEvent(){
     const form = document.getElementsByTagName('form')[0];
     const resElem = document.getElementById('result');
-    form.addEventListener('submit', (formData) =>{
-        fetch('https://mirkrasok.ru/Order/Add', { 
+    form.addEventListener('submit', async (formData) =>{
+        await fetch('https://mirkrasok.ru/Order/Add', { 
             method: 'POST', 
             headers: {
                 "Content-Type": "application/json", 
             }, 
-            body: JSON.stringify(formData)} )
-            .then(response => {                
-                resElem.innerText = "Ваш запрос отправлен";
-            })
-            .catch(error => {
-                console.error(error);
-                resElem.innerText = "Ошибка отправки. Попробуте снова!";
-            })
-    })
+            body: JSON.stringify(formData)} )            
+    });
 }

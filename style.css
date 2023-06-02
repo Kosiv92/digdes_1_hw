@@ -57,5 +57,18 @@ body div{
 
 .right-column {
     background: rgb(240, 217, 226);    
-    }
+}
 
+.valute{
+    margin: 1em;
+}
+
+table{
+    border: 2px solid #000;
+    background-color: rgb(179, 204, 205);
+    margin-bottom: 1em;
+}
+
+td, th{
+    border: 1px solid #000;
+}

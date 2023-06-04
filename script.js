@@ -13,16 +13,3 @@ async function getQuotes() {
     eurElement.textContent = quoteEUR.Value.toFixed(2);
    }
 }
-
-function addPostEvent(){
-    const form = document.getElementsByTagName('form')[0];
-    const resElem = document.getElementById('result');
-    form.addEventListener('submit', async (formData) =>{
-        await fetch('https://mirkrasok.ru/Order/Add', { 
-            method: 'POST', 
-            headers: {
-                "Content-Type": "application/json", 
-            }, 
-            body: JSON.stringify(formData)} )            
-    });
-}
